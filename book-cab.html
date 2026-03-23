@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Cab | Swara Travels</title>
+  <meta name="description" content="Book your cab online with Swara Travels." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="logo-box">
+      <h1>Swara Travels</h1>
+      <p>Taxi Service Across Maharashtra</p>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="swaratravels.html">Home</a>
+      <a href="book-cab.html">Book Cab</a>
+      <a href="index.html#places">Destinations</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="min-height: 42vh;">
+    <div class="hero-overlay">
+      <h2>Online Cab Booking</h2>
+      <h3>Quick, Easy & Comfortable Booking</h3>
+      <p>Book your trip in just a few steps</p>
+    </div>
+  </section>
+
+  <section class="section-card" style="margin-top: 10px;">
+    <h2>Book Your Cab</h2>
+
+    <form id="bookingForm" class="booking-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" required />
+      <input type="number" id="km" placeholder="Distance in KM" />
+
+      <select id="car" required>
+        <option value="">Select Car</option>
+        <option value="Xcent Prime T Permit">Xcent Prime T Permit</option>
+        <option value="Ertiga">Ertiga</option>
+        <option value="Kia Carens">Kia Carens</option>
+        <option value="Swift Dzire">Swift Dzire</option>
+        <option value="WagonR">WagonR</option>
+        <option value="Chevrolet Enjoy">Chevrolet Enjoy</option>
+      </select>
+
+      <button type="button" class="outline-btn" onclick="calculateFare()">
+        Calculate Fare
+      </button>
+
+      <p id="fare" class="fare-text"></p>
+
+      <button type="submit" class="full-btn">Send Booking</button>
+    </form>
+  </section>
+
+  <section class="section-card contact-box">
+    <h2>Need Instant Booking?</h2>
+    <p style="margin-bottom: 12px; color: #555;">
+      For quick confirmation, connect with us directly on WhatsApp.
+    </p>
+    <a class="whatsapp" href="https://wa.me/918104050420">WhatsApp Booking</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Swara Travels. All Rights Reserved.</p>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="swaratravels.html" class="nav-item">
+      <span>🏠</span>
+      <small>Home</small>
+    </a>
+    <a href="book-cab.html" class="nav-item active">
+      <span>🚕</span>
+      <small>Book</small>
+    </a>
+    <a href="index.html#places" class="nav-item">
+      <span>📍</span>
+      <small>Places</small>
+    </a>
+    <a href="index.html#gallery" class="nav-item">
+      <span>🖼️</span>
+      <small>Cars</small>
+    </a>
+    <a href="contact.html" class="nav-item">
+      <span>📞</span>
+      <small>Contact</small>
+    </a> 
+    <a href="reviews.html" class="nav-item">
+      <span>⭐</span>
+      <small>Reviews</small>
+    </a>
+  </nav>
+
+  <script>
+    function calculateFare() {
+      const km = document.getElementById("km").value;
+      const fareText = document.getElementById("fare");
+
+      if (km === "" || km <= 0) {
+        fareText.innerText = "Please enter valid distance.";
+        return;
+      }
+
+      const ratePerKm = 14;
+      const totalFare = km * ratePerKm;
+
+      fareText.innerText = "Estimated Fare: ₹" + totalFare;
+    }
+
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const mobile = document.getElementById("mobile").value.trim();
+      const km = document.getElementById("km").value.trim();
+      const car = document.getElementById("car").value;
+
+      if (!name || !mobile || !car) {
+        alert("Please fill all required details.");
+        return;
+      }
+
+      if (mobile.length !== 10 || isNaN(mobile)) {
+        alert("Please enter valid 10-digit mobile number.");
+        return;
+      }
+
+      const message =
+`Hello Swara Travels,
+
+I want to book a cab.
+
+Name: ${name}
+Mobile: ${mobile}
+Selected Car: ${car}
+Distance: ${km || "Not entered"} KM`;
+
+      const whatsappURL =
+        "https://wa.me/918104050420?text=" + encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank");
+
+      alert("Booking details sent successfully!");
+      document.getElementById("bookingForm").reset();
+      document.getElementById("fare").innerText = "";
+    });
+  </script>
+</body>
+</html>

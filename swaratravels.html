@@ -1,0 +1,256 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swara Travels | Taxi Booking Maharashtra</title>
+    <meta
+        name="description"
+        content="Book taxi across Maharashtra. Shirdi, Nashik, Lonavala, Mahabaleshwar trips available."
+    />
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="logo-box">
+        <h1>Swara Travels</h1>
+        <p>Taxi Service Across Maharashtra</p>
+        </div>
+
+        <nav class="desktop-nav">
+        <a href="swaratravels.html">Home</a>
+        <a href="book-cab.html">Book Cab</a>
+        <a href="#places">Destinations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+        <h2>Welcome to Swara Travels</h2>
+        <h3>Safe, Comfortable & Affordable Cab Booking</h3>
+        <p>Local | Outstation | Temple Trips</p>
+
+        <div class="hero-buttons">
+            <button class="primary-btn" onclick="scrollBooking()">Book Now</button>
+            <a href="https://wa.me/918104050420" class="secondary-btn">WhatsApp</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="section-card">
+        <h2>Online Cab Booking</h2> 
+        <form id="bookingForm" class="booking-form">
+  <input type="text" id="name" placeholder="Your Name" required />
+  <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" required />
+  <input type="number" id="km" placeholder="Distance in KM" />
+
+  <select id="car" required>
+    <option value="">Select Car</option>
+    <option value="Xcent Prime">Xcent Prime</option>
+    <option value="Ertiga">Ertiga</option>
+    <option value="Kia Carens">Kia Carens</option>
+    <option value="Swift Dzire">Swift Dzire</option>
+    <option value="WagonR">WagonR</option>
+    <option value="Chevrolet Enjoy">Chevrolet Enjoy</option>
+  </select>
+
+  <button type="button" class="outline-btn" onclick="calculateFare()">
+    Calculate Fare
+  </button>
+
+  <p id="fare" class="fare-text"></p>
+
+  <button type="submit" class="primary-btn full-btn">Send Booking</button>
+</form>
+    </section>
+
+    <!-- Destinations -->
+    <section id="places" class="section-card">
+        <h2>Maharashtra Destinations</h2>
+
+        <div class="destinations">
+        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Shirdi"><p>Shirdi</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/hindu-temple.png" alt="Trimbakeshwar"><p>Trimbakeshwar</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Nashik"><p>Nashik</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Lonavala"><p>Lonavala</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Khandala"><p>Khandala</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/landscape.png" alt="Mahabaleshwar"><p>Mahabaleshwar</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/landscape.png" alt="Panchgani"><p>Panchgani</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Alibaug"><p>Alibaug</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Kolhapur"><p>Kolhapur</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Tuljapur"><p>Tuljapur</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Shani Shingnapur"><p>Shani Shingnapur</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/cave.png" alt="Ajanta"><p>Ajanta</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/cave.png" alt="Ellora"><p>Ellora</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Aurangabad"><p>Aurangabad</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Ratnagiri"><p>Ratnagiri</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Ganpatipule"><p>Ganpatipule</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/fort.png" alt="Sindhudurg"><p>Sindhudurg</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Tarkarli"><p>Tarkarli</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/lake.png" alt="Lavasa"><p>Lavasa</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Igatpuri"><p>Igatpuri</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/lake.png" alt="Bhandardara"><p>Bhandardara</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Matheran"><p>Matheran</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Karjat"><p>Karjat</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Satara"><p>Satara</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Solapur"><p>Solapur</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Pune"><p>Pune</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Mumbai"><p>Mumbai</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Nagpur"><p>Nagpur</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Wardha"><p>Wardha</p></div>
+        <div class="place"><img src="https://img.icons8.com/color/48/forest.png" alt="Chandrapur"><p>Chandrapur</p></div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    
+<section id="gallery" class="section-card">
+  <h2>Our Cars</h2>
+
+  <div class="gallery-wrap cars-grid">
+    <div class="car-card">
+      <img src="https://imgd.aeplcdn.com/664x374/ec/09/C6/12657/img/orig/Hyundai-Xcent-Right-Front-Three-Quater-25662.jpg?v=201711021421&q=80" class="gallery" alt="Xcent Prime T Permit" />
+      <div class="car-content">
+        <h3>Xcent Prime</h3>
+        <p>Comfortable sedan for city and outstation trips.</p>
+        <div class="car-features">
+          <span>👥 4 Seats</span>
+          <span>❄️ AC</span>
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20Xcent%20Prime" class="book-car-btn">Book on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Ertiga-Tour/9617/1762858404297/front-left-side-47.jpg" class="gallery" alt="Ertiga" />
+      <div class="car-content">
+        <h3>Ertiga</h3>
+        <p>Spacious family car, perfect for group travel.</p>
+        <div class="car-features">
+          <span>👥 6 Seats</span>
+          <span>❄️ AC</span>
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20Ertiga" class="book-car-btn">Book on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://stimg.cardekho.com/images/car-images/large/Kia/Carens/11623/1772787394998/Clear-White_aeaeae.jpg?impolicy=resize&imwidth=420" class="gallery" alt="Kia Carens" />
+      <div class="car-content">
+        <h3>Kia Carens</h3>
+        <p>Premium and spacious option for comfortable journeys.</p>
+        <div class="car-features">
+          <span>👥 6 Seats</span>
+          <span>❄️ AC</span>
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20Kia%20Carens" class="book-car-btn">Book on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://imgd.aeplcdn.com/370x208/n/ues0egb_1840524.jpg?q=80" class="gallery" alt="Swift Dzire" />
+      <div class="car-content">
+        <h3>Swift Dzire</h3>
+        <p>Reliable sedan for daily rides and outstation travel.</p>
+        <div class="car-features">
+          <span>👥 4 Seats</span>
+          <span>❄️ AC</span>
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20Swift%20Dzire" class="book-car-btn">Book on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://stimg.cardekho.com/images/car-images/large/Maruti/Wagon-R/8835/1646030706414/224_SOLID-WHITE_b0b1b5.jpg?impolicy=resize&imwidth=420" class="gallery" alt="WagonR" />
+      <div class="car-content">
+        <h3>WagonR</h3>
+        <p>Budget-friendly and practical car for local trips.</p>
+        <div class="car-features">
+          <span>👥 4 Seats</span>
+          <span>❄️ AC</span>
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20WagonR" class="book-car-btn">Book on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Chevrolet/Chevrolet-Enjoy-2013-2015/2444/front-left-side-47.jpg?imwidth=420&impolicy=resize" class="gallery" alt="Chevrolet Enjoy" />
+      <div class="car-content">
+        <h3>Chevrolet Enjoy</h3>
+        <p>Strong and comfortable option for smooth rides.</p>
+        <div class="car-features">
+          <span>👥 6 Seats</span>
+          <span>❄️ AC</span>
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20Chevrolet%20Enjoy" class="book-car-btn">Book on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section-card">
+        <h2>Customer Reviews</h2>
+
+        <div class="reviews-wrap">
+        <div class="review">
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>Great service for Shirdi trip.</p>
+        </div>
+
+        <div class="review">
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>Comfortable ride and friendly driver.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-card contact-box">
+        <h2>Contact Swara Travels</h2>
+        <p>Phone: 8104050420</p>
+        <a class="whatsapp" href="https://wa.me/918104050420">WhatsApp Booking</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Swara Travels</p>
+    </footer>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav">
+        <a href="swaratravels.html" class="nav-item active">
+        <span>🏠</span>
+        <small>Home</small>
+        </a>
+        <a href="book-cab.html" class="nav-item">
+        <span>🚕</span>
+        <small>Book</small>
+        </a>
+        <a href="#places" class="nav-item">
+        <span>📍</span>
+        <small>Places</small>
+        </a>
+        <a href="#gallery" class="nav-item">
+        <span>🖼️</span>
+        <small>Cars</small>
+        </a>
+        <a href="contact.html" class="nav-item">
+        <span>📞</span>
+        <small>Contact</small>
+        </a>
+        <a href="reviews.html" class="nav-item">
+        <span>⭐</span>
+        <small>Reviews</small>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
