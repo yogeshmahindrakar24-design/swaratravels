@@ -14,20 +14,33 @@
 
     <!-- Top Header -->
     <header class="top-header">
-        <div class="logo-box">
-        <h1>Swara Travels</h1>
-        <p>Taxi Service Across Maharashtra</p>
-        </div>
+  <div class="logo-box">
+    <h1>Swara Travels</h1>
+    <p>Taxi Service Across Maharashtra</p>
+  </div>
 
-        <nav class="desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="book-cab.html">Book Cab</a>
-        <a href="#places">Destinations</a>
-        <a href="#gallery">Gallery</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <!-- Mobile Menu Button -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav class="desktop-nav" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="book-cab.html">Book Cab</a>
+
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown(event)">Destinations ▼</a>
+
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="lonavala.html">Lonavala Tour</a>
+        <a href="ashtavinayak.html">Ashtavinayak Tour</a>
+        <a href="nashik.html">Nashik Tour</a>
+      </div>
+    </div>
+
+    <a href="#gallery">Gallery</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
     <!-- Hero -->
     <section class="hero" id="home">
@@ -72,42 +85,8 @@
     </section>
 
     <!-- Destinations -->
-    <section id="places" class="section-card">
-        <h2>Maharashtra Destinations</h2>
+ 
 
-        <div class="destinations">
-        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Shirdi"><p>Shirdi</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/hindu-temple.png" alt="Trimbakeshwar"><p>Trimbakeshwar</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Nashik"><p>Nashik</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Lonavala"><p>Lonavala</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Khandala"><p>Khandala</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/landscape.png" alt="Mahabaleshwar"><p>Mahabaleshwar</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/landscape.png" alt="Panchgani"><p>Panchgani</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Alibaug"><p>Alibaug</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Kolhapur"><p>Kolhapur</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Tuljapur"><p>Tuljapur</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/temple.png" alt="Shani Shingnapur"><p>Shani Shingnapur</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/cave.png" alt="Ajanta"><p>Ajanta</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/cave.png" alt="Ellora"><p>Ellora</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Aurangabad"><p>Aurangabad</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Ratnagiri"><p>Ratnagiri</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Ganpatipule"><p>Ganpatipule</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/fort.png" alt="Sindhudurg"><p>Sindhudurg</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/beach.png" alt="Tarkarli"><p>Tarkarli</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/lake.png" alt="Lavasa"><p>Lavasa</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Igatpuri"><p>Igatpuri</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/lake.png" alt="Bhandardara"><p>Bhandardara</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Matheran"><p>Matheran</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/mountain.png" alt="Karjat"><p>Karjat</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Satara"><p>Satara</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Solapur"><p>Solapur</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Pune"><p>Pune</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Mumbai"><p>Mumbai</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Nagpur"><p>Nagpur</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/city.png" alt="Wardha"><p>Wardha</p></div>
-        <div class="place"><img src="https://img.icons8.com/color/48/forest.png" alt="Chandrapur"><p>Chandrapur</p></div>
-        </div>
-    </section>
 
     <!-- Gallery -->
     
@@ -203,11 +182,13 @@
         <div class="review">
             <p class="stars">⭐⭐⭐⭐⭐</p>
             <p>Great service for Shirdi trip.</p>
+            <h4>- Rahul Patil</h4>
         </div>
 
         <div class="review">
             <p class="stars">⭐⭐⭐⭐⭐</p>
             <p>Comfortable ride and friendly driver.</p>
+            <h4>- Sneha Jadhav</h4>
         </div>
         </div>
     </section>
@@ -232,10 +213,6 @@
         <a href="book-cab.html" class="nav-item">
         <span>🚕</span>
         <small>Book</small>
-        </a>
-        <a href="#places" class="nav-item">
-        <span>📍</span>
-        <small>Places</small>
         </a>
         <a href="#gallery" class="nav-item">
         <span>🖼️</span>
