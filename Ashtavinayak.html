@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashtavinayak Tour | Swara Travels</title>
+  <meta name="description" content="Ashtavinayak Yatra tour packages with Swara Travels. All 8 Ganesh temples of Maharashtra." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .tour-hero {
+      background: linear-gradient(135deg, rgba(15,76,129,0.85), rgba(255,140,0,0.7)),
+                  url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Mayureshwar_temple_Morgaon.jpg/1280px-Mayureshwar_temple_Morgaon.jpg') center/cover no-repeat;
+      min-height: 48vh;
+    }
+
+    .place-card {
+      background: #fffdf8;
+      border: 1px solid #ffe8b0;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+      margin-bottom: 20px;
+    }
+
+    .place-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+
+    .place-card-body {
+      padding: 16px;
+    }
+
+    .temple-number {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff8c00, #e65c00);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .place-card-body h3 {
+      color: #0f4c81;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .location-tag {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .location-tag span {
+      color: #e65c00;
+      font-weight: 600;
+    }
+
+    .place-card-body p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+
+    .highlight-box {
+      background: #fff8e8;
+      border-left: 4px solid #ff8c00;
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 13px;
+      color: #7a4500;
+      line-height: 1.6;
+    }
+
+    .place-book-btn {
+      display: block;
+      text-align: center;
+      background: #25d366;
+      color: white;
+      padding: 11px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .place-book-btn:hover { background: #1ebe5d; }
+
+    .trip-info-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 14px 0 0;
+    }
+
+    .trip-badge {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .yatra-info {
+      background: linear-gradient(135deg, #fff8e8, #fff3d4);
+      border: 1px solid #ffe0a0;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .yatra-info h3 {
+      color: #e65c00;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .yatra-stats {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item .stat-num {
+      font-size: 26px;
+      font-weight: 800;
+      color: #e65c00;
+    }
+
+    .stat-item .stat-label {
+      font-size: 12px;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    .section-card h2 {
+      color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="logo-box">
+      <h1>Swara Travels</h1>
+      <p>Taxi Service Across Maharashtra</p>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="desktop-nav" id="navMenu">
+      <a href="swaratravels.html">Home</a>
+      <a href="book-cab.html">Book Cab</a>
+      <div class="dropdown">
+        <a href="#" onclick="toggleDropdown(event)">Destinations ▼</a>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="nashik.html">Nashik Tour</a>
+          <a href="ashtavinayak.html">Ashtavinayak Tour</a>
+        </div>
+      </div>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero tour-hero">
+    <div class="hero-overlay">
+      <h2>Ashtavinayak Yatra</h2>
+      <h3>8 Sacred Ganesha Temples of Maharashtra</h3>
+      <div class="trip-info-bar">
+        <span class="trip-badge">🐘 8 Temples</span>
+        <span class="trip-badge">📍 Pune · Raigad · Ahmednagar</span>
+        <span class="trip-badge">🛣️ 654 km Circuit</span>
+      </div>
+      <div class="hero-buttons" style="margin-top:18px;">
+        <a href="book-cab.html" class="primary-btn">Book Cab</a>
+        <a href="https://wa.me/918104050420" class="secondary-btn">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yatra Overview -->
+  <section class="section-card">
+    <div class="yatra-info">
+      <h3>🐘 What is Ashtavinayak Yatra?</h3>
+      <p style="color:#555; font-size:14px; line-height:1.7;">
+        "Ashtavinayak" means <strong>Eight Ganeshas</strong>. These are 8 ancient and sacred temples of Lord Ganesha spread across Maharashtra. Each temple has a unique self-manifested (Swayambhu) idol of Ganesha with its own legend and special power. The pilgrimage begins and ends at Morgaon. Completing this Yatra is believed to fulfill all wishes and remove all obstacles from life.
+      </p>
+      <div class="yatra-stats">
+        <div class="stat-item"><div class="stat-num">8</div><div class="stat-label">Sacred Temples</div></div>
+        <div class="stat-item"><div class="stat-num">654</div><div class="stat-label">km Total Distance</div></div>
+        <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Districts</div></div>
+        <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Days Ideal Trip</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 Temples -->
+  <section class="section-card">
+    <h2>The 8 Ashtavinayak Temples</h2>
+    <p style="text-align:center; color:#888; font-size:13px; margin-bottom:20px;">Visit in this sequence for complete Yatra</p>
+
+    <!-- 1. Moreshwar - Morgaon -->
+    <div class="place-card">
+      <img src="https://www.shodhmaharashtracha.com/wp-content/uploads/2023/09/mayureshwar-ganpati.jpg" alt="Moreshwar Temple Morgaon" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'" />
+      <div class="place-card-body">
+        <div class="temple-number">Temple 1 — Start & End of Yatra</div>
+        <h3>Moreshwar (Mayureshwar) — Morgaon</h3>
+        <p class="location-tag">📍 <span>Morgaon, Pune District</span> · 55 km from Pune</p>
+        <p>Moreshwar temple is the most important of all 8 Ashtavinayak temples and is both the starting and ending point of the Yatra. "Moreshwar" means "Lord who rides a peacock." According to legend, Lord Ganesha took the form of Mayureshwar (riding a peacock) and defeated the powerful demon Sindhu to protect the gods.</p>
+        <p>The temple is located in Morgaon village on the banks of the Karha River. The idol is three-eyed, with the trunk turned to the left (direction of success), and is flanked by idols of Siddhi and Riddhi. The temple has four entrance gates in all four directions and two large Deepmalas (lamp towers) in the courtyard.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: Starting & ending point of Ashtavinayak Yatra · Only 3-eyed Ganesha idol · Trunk turned left for success · Patronized by the Peshwas · Village shaped like a peacock
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20Yatra%20-%20Moreshwar%20Morgaon" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 2. Siddhivinayak - Siddhatek -->
+    <div class="place-card">
+      <img src="https://kirtankar.com/wp-content/uploads/2025/03/Shri-Siddhivinayak-Temple-Siddhatek.jpg" alt="Siddhivinayak Temple Siddhatek" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Temple 2</div>
+        <h3>Siddhivinayak — Siddhatek</h3>
+        <p class="location-tag">📍 <span>Siddhatek, Ahmednagar District</span> · 100 km from Pune</p>
+        <p>Siddhivinayak of Siddhatek is the only Ashtavinayak temple in Ahmednagar district and is considered extremely powerful. The name "Siddhatek" means the hill of Siddha (enlightened beings). According to legend, Lord Vishnu worshipped Ganesha here before fighting the demons Madhu and Kaitabha — and with Ganesha's blessings, he succeeded.</p>
+        <p>This is the only Ashtavinayak temple where the idol's trunk is turned to the right — which is considered especially rare and powerful. The idol faces north and is located on the banks of the holy Bhima River. The sanctum of the temple was constructed by the great queen Ahilyabai Holkar.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: Only Ashtavinayak with trunk turned RIGHT (very rare & powerful) · Vishnu worshipped Ganesha here · Built by Queen Ahilyabai Holkar · On the banks of Bhima River · Devotees can touch the idol
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Siddhivinayak%20Siddhatek" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 3. Ballaleshwar - Pali -->
+    <div class="place-card">
+      <img src="https://i.ytimg.com/vi/a4sQUahzjaQ/maxresdefault.jpg" alt="Ballaleshwar Temple Pali" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Temple 3</div>
+        <h3>Ballaleshwar — Pali</h3>
+        <p class="location-tag">📍 <span>Pali, Raigad District</span> · 120 km from Pune</p>
+        <p>Ballaleshwar is the only Ganesha temple in the world that is named after a devotee — Ballal. According to legend, a young boy named Ballal was a great devotee of Lord Ganesha. When his father and the villagers tried to stop his worship and beat him, Lord Ganesha appeared to protect him and blessed him. The temple is named "Ballaleshwar" meaning "God of Ballal."</p>
+        <p>The temple is located in Pali village in the Konkan region of Raigad district. The idol has diamond-studded eyes that sparkle brilliantly. The temple faces east and is built such that during the winter solstice, the rays of the rising sun fall directly on the idol — a remarkable feat of ancient architecture.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: Only Ganesha temple named after a devotee (Ballal) · Diamond-studded eyes on the idol · Sun rays fall directly on the idol during winter solstice · Located in Konkan's scenic Pali village
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Ballaleshwar%20Pali" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 4. Varadvinayak - Mahad -->
+    <div class="place-card">
+      <img src="https://i.ytimg.com/vi/ibtc4GXbaGk/hqdefault.jpg" alt="Varadvinayak Temple Mahad" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Temple 4</div>
+        <h3>Varadvinayak — Mahad</h3>
+        <p class="location-tag">📍 <span>Mahad (Kolad), Raigad District</span> · 146 km from Pune</p>
+        <p>Varadvinayak means "the giver of all boons and wishes." This temple is believed to fulfill all the wishes of devotees who pray here with a pure heart. The idol is Swayambhu (self-manifested) — it was discovered in a lake near the temple and hence has a naturally weathered look. The temple was built in 1725 by Subhedar Ramji Mahadev Bivalkar.</p>
+        <p>The most extraordinary feature of this temple is the Nandadeep — a sacred oil lamp that has been burning continuously since 1892 without stopping, for over 130 years. The temple is located amidst beautiful bamboo groves in the lush Raigad district. Devotees are allowed to enter the Garbhagriha (inner sanctum) personally.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: "Fulfiller of all wishes" · Sacred Nandadeep oil lamp burning non-stop since 1892 · Swayambhu idol found in lake · Devotees can enter inner sanctum personally · Lush bamboo grove surroundings
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Varadvinayak%20Mahad" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 5. Chintamani - Theur -->
+    <div class="place-card">
+      <img src="https://i.ytimg.com/vi/23246sOv3zA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDTHk94CYRFwEA4OYSEQ-r0YFKYwQ" alt="Chintamani Temple Theur" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Temple 5</div>
+        <h3>Chintamani — Theur</h3>
+        <p class="location-tag">📍 <span>Theur, Pune District</span> · 25 km from Pune</p>
+        <p>Chintamani means "the gem that removes all worries and anxieties." This temple is one of the most popular Ashtavinayak temples due to its closeness to Pune. According to legend, the sage Kapila had a magic gem called Chintamani. When King Abhijit stole it, Ganesha retrieved it and returned it to the sage — and it is this form of Ganesha, the retriever of the gem, that is worshipped here.</p>
+        <p>The temple was built by Dharanidhar Dev, the son of the great saint Moraya Gosavi, and is situated near the beautiful confluence of the Mula, Mutha, and Bhima rivers. The Madhavrao Peshwa, the great Maratha ruler, is closely associated with this temple. There is also a unique black stone water fountain inside the hall.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: "Remover of all worries" (Chintamani) · Associated with Peshwa rulers · Located at confluence of 3 holy rivers · Built by son of Saint Moraya Gosavi · Closest Ashtavinayak to Pune city
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Chintamani%20Theur" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 6. Girijatmaj - Lenyadri -->
+    <div class="place-card">
+      <img src="https://i.ytimg.com/vi/_xBF3OGzi9w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB7inq1TDCSg1S4ryAttOAGP6X7fQ" alt="Girijatmaj Temple Lenyadri" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Temple 6</div>
+        <h3>Girijatmaj — Lenyadri</h3>
+        <p class="location-tag">📍 <span>Lenyadri (Junnar), Pune District</span> · 94 km from Pune</p>
+        <p>Girijatmaj means "son of Girija (Parvati)." This is the most unique of all 8 Ashtavinayak temples — it is the only one located inside a mountain cave. The temple is carved into a Buddhist cave complex (8th cave out of 18 caves) on a hill near Junnar. According to legend, Goddess Parvati performed intense penance here and Lord Ganesha was born to her at this sacred spot.</p>
+        <p>Devotees must climb 307 stone steps to reach the temple. The idol is carved into the rock face and cannot be removed. It faces north with the trunk to the left. The temple has no electric bulb — it is lit entirely by sunlight throughout the day due to the clever design of the cave entrance. The famous fort of Shivneri (birthplace of Chhatrapati Shivaji Maharaj) is just 5–6 km away.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: Only Ashtavinayak inside a mountain cave · 307 steps pilgrimage climb · Idol carved in rock — cannot be moved · Lit only by sunlight, no electricity · Shivaji Maharaj's birthplace (Shivneri Fort) nearby
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Girijatmaj%20Lenyadri" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 7. Vighnahar - Ozar -->
+    <div class="place-card">
+      <img src="https://i.ytimg.com/vi/9KK5c0hnRxA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCcyIQB-iul2n_scnT7PJ5vvQoFyw" alt="Vighnahar Temple Ozar" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Temple 7</div>
+        <h3>Vighnahar (Vighneshwar) — Ozar</h3>
+        <p class="location-tag">📍 <span>Ozar (Junnar), Pune District</span> · 95 km from Pune</p>
+        <p>Vighnahar means "the remover of all obstacles." According to legend, a demon named Vighnasura was created by Indra (King of Gods) to disturb the prayers of devotees. Ganesha defeated Vighnasura, and after his defeat, the demon requested Ganesha to take his name. From then on, Ganesha is worshipped here as "Vighnahar" — the one who defeated the obstacle demon.</p>
+        <p>The temple is surrounded by high stone fort-like walls, giving it a strong and powerful appearance. The gold-plated pinnacle (shikhara) of the temple is visible from a great distance. The idol's forehead is studded with a large diamond. Riddhi and Siddhi flank the idol. The temple is situated near the scenic Kukadi River, 95 km from Pune on the Pune-Nashik Highway.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: "Remover of all obstacles" · Gold-plated pinnacle visible from far · Diamond-studded forehead on the idol · Fort-like high stone walls · On the scenic Kukadi River · Located on Pune-Nashik Highway
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Vighnahar%20Ozar" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 8. Mahaganapati - Ranjangaon -->
+    <div class="place-card">
+      <img src="https://thetempleguru.com/wp-content/uploads/2023/04/Mahaganpati-ranjangaon-7.jpg" alt="Mahaganapati Temple Ranjangaon" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Temple 8 — Most Powerful</div>
+        <h3>Mahaganapati — Ranjangaon</h3>
+        <p class="location-tag">📍 <span>Ranjangaon, Pune District</span> · 50 km from Pune</p>
+        <p>Mahaganapati of Ranjangaon is considered the most powerful of all 8 Ashtavinayak temples. "Mahaganapati" means "the greatest Ganesha." According to legend, Lord Shiva himself worshipped Ganesha at this place before fighting the powerful demon Tripurasura — and with Ganesha's blessings, Shiva succeeded in defeating the demon. The town was originally called "Manipur" and was set up by Shiva himself.</p>
+        <p>The temple was built between the 9th and 10th centuries. The idol faces east and is seated in a cross-legged position with a broad forehead. According to legend, the real idol hidden in the basement has 10 trunks and 20 hands and is called Mahotkat — it is shown only on very special occasions. The temple faces east symbolizing new beginnings, and the outer hall was built by Sardar Kibe of Indore.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: Most powerful of all 8 Ashtavinayak temples · Lord Shiva worshipped Ganesha here · Hidden idol has 10 trunks & 20 hands (Mahotkat) · Built in 9th–10th century · Town established by Lord Shiva himself
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Mahaganapati%20Ranjangaon" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="section-card contact-box">
+    <h2 style="color:#e65c00;">Plan Your Ashtavinayak Yatra</h2>
+    <p style="color:#555; margin-bottom:16px;">Book a comfortable cab for the complete Ashtavinayak circuit from Pune, Mumbai or Nashik.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="book-cab.html" class="outline-btn primary-btn">Book Online</a>
+      <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20plan%20Ashtavinayak%20Yatra" class="whatsapp">WhatsApp Enquiry</a>
+    </div>
+  </section>
+
+  <footer><p>© 2026 Swara Travels. All Rights Reserved.</p></footer>
+
+  <nav class="bottom-nav">
+    <a href="swaratravels.html" class="nav-item"><span>🏠</span><small>Home</small></a>
+    <a href="book-cab.html" class="nav-item"><span>🚕</span><small>Book</small></a>
+    <a href="swaratravels.html#gallery" class="nav-item"><span>🖼️</span><small>Cars</small></a>
+    <a href="contact.html" class="nav-item"><span>📞</span><small>Contact</small></a>
+    <a href="reviews.html" class="nav-item"><span>⭐</span><small>Reviews</small></a>
+  </nav>
+
+  <script>
+    function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }
+    function toggleDropdown(e) {
+      e.preventDefault();
+      const menu = document.getElementById("dropdownMenu");
+      if (menu) menu.classList.toggle("show");
+    }
+    document.addEventListener("click", function(e) {
+      const nav = document.getElementById("navMenu");
+      const toggle = document.querySelector(".menu-toggle");
+      if (nav && toggle && !nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
