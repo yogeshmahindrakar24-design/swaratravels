@@ -9,17 +9,23 @@
 </head>
 <body>
 
-  <header class="top-header">
+ <header class="top-header">
     <div class="logo-box">
       <h1>Swara Travels</h1>
       <p>Taxi Service Across Maharashtra</p>
     </div>
-
-    <nav class="desktop-nav">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="desktop-nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="book-cab.html">Book Cab</a>
-      <a href="index.html#places">Destinations</a>
-      <a href="index.html#gallery">Gallery</a>
+      <div class="dropdown">
+        <a href="#" onclick="toggleDropdown(event)">Destinations ▼</a>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="nashik.html">Nashik Tour</a>
+          <a href="ashtavinayak.html">Ashtavinayak Tour</a>
+          <a href="solapur.html">Solapur Tour</a>
+        </div>
+      </div>
       <a href="reviews.html">Reviews</a>
       <a href="contact.html">Contact</a>
     </nav>
