@@ -15,14 +15,22 @@
       <p>Taxi Service Across Maharashtra</p>
     </div>
 
-    <nav class="desktop-nav">
-      <a href="index.html">Home</a>
-      <a href="book-cab.html">Book Cab</a>
-      <a href="index.html#places">Destinations</a>
-      <a href="index.html#gallery">Gallery</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav class="desktop-nav" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="book-cab.html">Book Cab</a>
+
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown(event)">Destinations ▼</a>
+
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="lonavala.html">Lonavala Tour</a>
+        <a href="Ashtavinayak.html">Ashtavinayak Tour</a>
+        <a href="nashik.html">Nashik Tour</a>
+        <a href="solapur.html">Solapur Tour</a>
+      </div>
+    </div>
   </header>
 
   <section class="hero" style="min-height: 42vh;">
