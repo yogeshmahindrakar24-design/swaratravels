@@ -10,26 +10,35 @@
 <body>
 
   <header class="top-header">
-    <div class="logo-box">
-      <h1>Swara Travels</h1>
-      <p>Taxi Service Across Maharashtra</p>
-    </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="desktop-nav" id="navMenu">
-      <a href="index.html">Home</a>
-      <a href="book-cab.html">Book Cab</a>
-      <div class="dropdown">
-        <a href="#" onclick="toggleDropdown(event)">Destinations ▼</a>
-        <div class="dropdown-menu" id="dropdownMenu">
-          <a href="nashik.html">Nashik Tour</a>
-          <a href="ashtavinayak.html">Ashtavinayak Tour</a>
-          <a href="solapur.html">Solapur Tour</a>
-        </div>
+  <div class="logo-box">
+    <h1>Swara Travels</h1>
+    <p>Taxi Service Across Maharashtra</p>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav class="desktop-nav" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="book-cab.html">Book Cab</a>
+
+    <div class="dropdown">
+      <a href="#" onclick="toggleDropdown(event)">Destinations ▼</a>
+
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="lonavala.html">Lonavala Tour</a>
+        <a href="Ashtavinayak.html">Ashtavinayak Tour</a>
+        <a href="nashik.html">Nashik Tour</a>
+        <a href="solapur.html">Solapur Tour</a>
       </div>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
+
+    <a href="#gallery">Gallery</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
   <section class="hero contact-hero">
     <div class="hero-overlay">
       <h2>Contact Swara Travels</h2>
