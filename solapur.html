@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solapur Tour | Swara Travels</title>
+  <meta name="description" content="Ashtavinayak Yatra tour packages with Swara Travels. All 8 Ganesh temples of Maharashtra." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .tour-hero {
+      background: linear-gradient(135deg, rgba(15,76,129,0.85), rgba(255,140,0,0.7)),
+                  url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Mayureshwar_temple_Morgaon.jpg/1280px-Mayureshwar_temple_Morgaon.jpg') center/cover no-repeat;
+      min-height: 48vh;
+    }
+
+    .place-card {
+      background: #fffdf8;
+      border: 1px solid #ffe8b0;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+      margin-bottom: 20px;
+    }
+
+    .place-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+
+    .place-card-body {
+      padding: 16px;
+    }
+
+    .temple-number {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff8c00, #e65c00);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .place-card-body h3 {
+      color: #0f4c81;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .location-tag {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .location-tag span {
+      color: #e65c00;
+      font-weight: 600;
+    }
+
+    .place-card-body p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+
+    .highlight-box {
+      background: #fff8e8;
+      border-left: 4px solid #ff8c00;
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 13px;
+      color: #7a4500;
+      line-height: 1.6;
+    }
+
+    .place-book-btn {
+      display: block;
+      text-align: center;
+      background: #25d366;
+      color: white;
+      padding: 11px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .place-book-btn:hover { background: #1ebe5d; }
+
+    .trip-info-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 14px 0 0;
+    }
+
+    .trip-badge {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .yatra-info {
+      background: linear-gradient(135deg, #fff8e8, #fff3d4);
+      border: 1px solid #ffe0a0;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .yatra-info h3 {
+      color: #e65c00;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .yatra-stats {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item .stat-num {
+      font-size: 26px;
+      font-weight: 800;
+      color: #e65c00;
+    }
+
+    .stat-item .stat-label {
+      font-size: 12px;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    .section-card h2 {
+      color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="logo-box">
+      <h1>Swara Travels</h1>
+      <p>Taxi Service Across Maharashtra</p>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="desktop-nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="book-cab.html">Book Cab</a>
+      <div class="dropdown">
+        <a href="#" onclick="toggleDropdown(event)">Destinations ▼</a>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="nashik.html">Nashik Tour</a>
+          <a href="Ashtavinayak.html">Ashtavinayak Tour</a>
+          <a href="solapur.html">Solapur Tour</a>
+        </div>
+      </div>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero tour-hero">
+    <div class="hero-overlay">
+      <h2>Solapur Tour</h2>
+      <h3>Top Tourist Attractions in Solapur</h3>
+      <div class="trip-info-bar">
+        <span class="trip-badge">Akkalkot</span>
+        <span class="trip-badge">Pandharpur</span>
+        <span class="trip-badge">Siddharameshwar Temple</span>
+        <span class="trip-badge">Tuljapur</span>
+      </div>
+      <div class="hero-buttons" style="margin-top:18px;">
+        <a href="book-cab.html" class="primary-btn">Book Cab</a>
+        <a href="https://wa.me/918104050420" class="secondary-btn">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yatra Overview -->
+  <section class="section-card">
+    <h2>Places to Visit in Solapur</h2>
+
+  <!-- 8 Temples -->
+  <section class="section-card">
+
+    <!-- 1. Moreshwar - Morgaon -->
+    <div class="place-card">
+      <img src="https://gotraveltrek.com/wp-content/uploads/2022/05/swami-akkalkot2.jpg" alt="Moreshwar Temple Morgaon" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'" />
+      <div class="place-card-body">
+        <div class="temple-number">Akkalkot</div>
+        <h3>Swami Samarth Temple — Akkalkot</h3>
+        <p class="location-tag">📍 <span>Akkalkot, Solapur District</span> · 40 km from Solapur</p>
+        <p>This temple is dedicated to Shri Swami Samarth Maharaj, believed to be an incarnation of Lord Dattatreya. Devotees believe that visiting Akkalkot fulfills wishes and removes life problems. Swami Samarth lived here for many years and performed miracles.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: Powerful spiritual energy, miracles of Swami Samarth, huge devotee following.
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20Yatra%20-%20Moreshwar%20Morgaon" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 2 Pandharpur -->
+    <div class="place-card">
+      <img src="https://utsav.gov.in/public/uploads/darshan_picture/darshan_37/16508873901556303548.jpg" alt="Siddhivinayak Temple Siddhatek" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Pandharpur</div>
+        <h3>Vitthal Rukmini Temple — Pandharpur</h3>
+        <p class="location-tag">📍 <span>Pandharpur</span> · 75 km from Solapur</p>
+        <p>Pandharpur is one of the most important pilgrimage sites in Maharashtra dedicated to Lord Vitthal (Krishna). Lakhs of devotees visit during Ashadhi Ekadashi Yatra.</p>
+        <div class="highlight-box">
+          ✨ Why Famous: Lord Vitthal temple, Wari pilgrimage, spiritual capital of Maharashtra.
+        </div>
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Siddhivinayak%20Siddhatek" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+    <!-- 4. Siddharameshwar Temple -->
+    <div class="place-card">
+      <img src="https://temple.yatradham.org/public/Product/temple/temple_s5nkrzU8_202505281355240.jpg" alt="Varadvinayak Temple Mahad" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Siddharameshwar</div>
+        <h3>Siddharameshwar Temple</h3>
+        <p class="location-tag">📍 <span>Solapur City</span> · Solapur City</p>
+        <p>Dedicated to Lord Shiva, this temple is located in the middle of Siddheshwar Lake. It was built by Saint Siddharama and is a peaceful spiritual spot.</p>
+          ✨ Why Famous: Lake temple, Mahashivratri fair, calm spiritual environment.
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Varadvinayak%20Mahad" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+
+<!-- 4. Tuljapur Temple -->
+    <div class="place-card">
+      <img src="https://temple.yatradham.org/public/Product/temple/temple_abZYQ8Nf_202506231648580.jpg" alt="Varadvinayak Temple Mahad" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/400px-Placeholder_view_vector.svg.png'"/>
+      <div class="place-card-body">
+        <div class="temple-number">Tuljapur</div>
+        <h3>Shree Tulja Bhavani Temple Tuljapur</h3>
+        <p class="location-tag">📍 <span>Tuljapur</span> · 45 km from Solapur</p>
+        <p>The Shree Tulja Bhavani Temple is not just a place of religion. This Tulja Bhavani temple Shows  serves as a cultural centre for the community. This is where thousands of pilgrims come for festivals like Diwali and Navratri. The Faith on this holy site connects people together during these celebrations. Tulja Bhavani's heavenly force is celebrated by everybody. Yoga and meditation are also practiced in the temple. Spiritual seekers from all over the world are drawn to it. Devotees develop a strong feeling of community as a result. This is where people gather for devotion and worship. The temple is a living history as well as a place of worship. To honour Goddess Tulja Bhavani, devotees congregate. They recall her protection and kindness. The temple's magnificent architecture and rich cultural heritage inspire courage and optimism. Every prayer offered is a call to the goddess. She guides her devotees through life’s challenges. Her compassion and power light their path. Her blessings nurture our spirit. She leads us toward justice, strength, and peace. Each and every prayer is an appeal to the goddess. She helps her followers overcome obstacles in life. Their road is made easier by her strength and kindness. Our spirits are nourished by her blessings. She guides us towards peace, justice, and power.</p>
+          ✨ Why Famous: The Tulja Bhavani Temple is famous as a sacred shrine of Goddess Bhavani, worshipped as the family deity of Chhatrapati Shivaji Maharaj and an important Shakti Peetha.
+        <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20book%20a%20cab%20for%20Ashtavinayak%20-%20Varadvinayak%20Mahad" class="place-book-btn">📲 Book Cab for This Temple</a>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- CTA -->
+  <section class="section-card contact-box">
+    <h2 style="color:#e65c00;">Plan Your Solapur Tour</h2>
+    <p style="color:#555; margin-bottom:16px;">Book a comfortable cab for the complete Solapur circuit from solapur, Mumbai or Solapur.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="book-cab.html" class="outline-btn primary-btn">Book Online</a>
+      <a href="https://wa.me/918104050420?text=Hello%20Swara%20Travels,%20I%20want%20to%20plan%20Ashtavinayak%20Yatra" class="whatsapp">WhatsApp Enquiry</a>
+    </div>
+  </section>
+
+  <footer><p>© 2026 Swara Travels. All Rights Reserved.</p></footer>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item"><span>🏠</span><small>Home</small></a>
+    <a href="book-cab.html" class="nav-item"><span>🚕</span><small>Book</small></a>
+    <a href="index.html#gallery" class="nav-item"><span>🖼️</span><small>Cars</small></a>
+    <a href="contact.html" class="nav-item"><span>📞</span><small>Contact</small></a>
+    <a href="reviews.html" class="nav-item"><span>⭐</span><small>Reviews</small></a>
+  </nav>
+
+  <script>
+    function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }
+    function toggleDropdown(e) {
+      e.preventDefault();
+      const menu = document.getElementById("dropdownMenu");
+      if (menu) menu.classList.toggle("show");
+    }
+    document.addEventListener("click", function(e) {
+      const nav = document.getElementById("navMenu");
+      const toggle = document.querySelector(".menu-toggle");
+      if (nav && toggle && !nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
